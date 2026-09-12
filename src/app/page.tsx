@@ -40,7 +40,7 @@ export default function HomePage() {
             </div>
 
             {/* Bottom Floating Elements */}
-            <div className="mt-24 md:mt-32 flex flex-col md:flex-row items-end justify-between gap-6">
+            <div className="mt-24 md:mt-32 flex flex-col md:flex-row items-center md:items-end justify-between gap-6">
               
               {/* Left Floating Card */}
               <div className="bg-white/10 backdrop-blur-xl border border-white/20 p-3 rounded-2xl max-w-[280px]">
@@ -57,7 +57,7 @@ export default function HomePage() {
               </div>
 
               {/* Right Floating Tags */}
-              <div className="flex flex-wrap justify-end gap-2 max-w-md">
+              <div className="flex flex-wrap justify-center md:justify-end gap-2 max-w-md">
                 {['Dental Checkup', 'Teeth Cleaning', 'Root Canal', 'Gum Treatment', 'Pediatrics'].map((tag) => (
                   <span key={tag} className="bg-white/15 backdrop-blur-md border border-white/20 text-white text-sm font-medium px-4 py-2 rounded-full">
                     {tag}
@@ -72,7 +72,7 @@ export default function HomePage() {
 
       {/* 2. PROCESS / BREADCRUMB BAR */}
       <div className="max-w-5xl mx-auto px-6 py-8 border-b border-gray-100">
-        <div className="flex flex-wrap items-center justify-between gap-4 text-xs font-semibold text-gray-400 uppercase tracking-wider">
+        <div className="flex flex-wrap items-center justify-center sm:justify-between gap-4 text-xs font-semibold text-gray-400 uppercase tracking-wider">
           <span className="text-gray-900">Smile Assessment</span>
           <span className="hidden sm:block flex-1 border-t border-dashed border-gray-200 mx-4"></span>
           <span>Care Planning</span>
@@ -106,7 +106,7 @@ export default function HomePage() {
         <p className="text-sm font-medium text-gray-500 mb-8">Thousands Trust Us for Smiles!</p>
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           
-          <div className="flex items-center gap-16 w-full md:w-auto">
+          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-8 sm:gap-16 w-full md:w-auto text-center sm:text-left">
             <div>
               <div className="text-5xl sm:text-6xl font-semibold text-gray-900 tracking-tight">98%</div>
               <div className="text-sm font-medium text-gray-500 mt-2">Satisfaction Rate</div>
