@@ -74,7 +74,7 @@ export default function AboutPage() {
 
               <div className="bg-white border border-gray-200 p-5 rounded-2xl shadow-sm">
                 <p className="text-sm font-medium text-gray-800 italic leading-relaxed">
-                  "{doctor.quote}"
+                  &quot;{doctor.quote}&quot;
                 </p>
               </div>
 

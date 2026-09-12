@@ -188,7 +188,7 @@ export default function HomePage() {
                 </div>
                 
                 <div className="pt-4 border-t border-gray-100 flex items-center justify-between">
-                  <span className="text-xs font-semibold text-gray-500">Today's Appointment Progress</span>
+                  <span className="text-xs font-semibold text-gray-500">Today&apos;s Appointment Progress</span>
                   <span className="text-xs font-bold text-gray-900">80%</span>
                 </div>
                 <div className="w-full bg-gray-100 h-1.5 rounded-full mt-2 overflow-hidden">
