@@ -26,7 +26,7 @@ export default function BeforeAfterSlider({
   afterLabel = "AFTER DIGISMILE RESTORATION",
   caseTitle,
   caseDescription,
-  doctorName = "Dr. Sandhosh & Dr. Sandhosh",
+  doctorName = "Dr. Sandhosh",
   duration = "Single Sitting"
 }: BeforeAfterSliderProps) {
   const [sliderPosition, setSliderPosition] = useState(50);
