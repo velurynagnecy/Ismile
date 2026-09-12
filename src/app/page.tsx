@@ -14,7 +14,7 @@ export default function HomePage() {
           <div className="absolute inset-0 z-0">
             <img
               src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=2000&auto=format&fit=crop"
-              alt="Patient smiling at iSMILE Dental Clinic"
+              alt="Patient smiling at DIGISMILE Dental Clinic"
               className="w-full h-full object-cover object-center opacity-80"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
@@ -29,7 +29,7 @@ export default function HomePage() {
                 Pain-Free <br /> Dental Care
               </h1>
               <p className="text-lg text-white/90 max-w-lg mb-8 leading-relaxed font-medium">
-                Single-sitting painless root canals, aesthetic smile work, and gentle care by Dr. Logesh and Dr. Riya in Puducherry.
+                Single-sitting painless root canals, advanced implants, and gentle care by Dr. Sandhosh in Puducherry.
               </p>
               <Link
                 href="/book"
@@ -89,8 +89,7 @@ export default function HomePage() {
           <div className="md:col-span-3">
             <span className="text-sm font-semibold text-gray-900">About Us</span>
             <div className="flex items-center mt-6 relative">
-              <img src={CLINIC_DATA.doctors[0].image} alt="Dr. Logesh" className="w-16 h-16 rounded-2xl object-cover border-2 border-white shadow-sm z-10" />
-              <img src={CLINIC_DATA.doctors[1].image} alt="Dr. Riya" className="w-16 h-16 rounded-2xl object-cover border-2 border-white shadow-sm -ml-4 z-0" />
+              <img src={CLINIC_DATA.doctors[0].image} alt="Dr. Sandhosh" className="w-16 h-16 rounded-2xl object-cover border-2 border-white shadow-sm z-10" />
             </div>
           </div>
           <div className="md:col-span-9">
@@ -112,7 +111,7 @@ export default function HomePage() {
               <div className="text-sm font-medium text-gray-500 mt-2">Satisfaction Rate</div>
             </div>
             <div>
-              <div className="text-5xl sm:text-6xl font-semibold text-gray-900 tracking-tight">234+</div>
+              <div className="text-5xl sm:text-6xl font-semibold text-gray-900 tracking-tight">132+</div>
               <div className="text-sm font-medium text-gray-500 mt-2">Smiles Transformed</div>
             </div>
             <div>
@@ -148,7 +147,7 @@ export default function HomePage() {
               <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-2xl overflow-hidden shrink-0 shadow-sm bg-gray-50">
                 <img 
                   src={CLINIC_DATA.doctors[0].image} 
-                  alt="Dr. Logesh" 
+                  alt="Dr. Sandhosh" 
                   className="w-full h-full object-cover object-top" 
                 />
               </div>
@@ -156,8 +155,8 @@ export default function HomePage() {
                 <div className="inline-flex items-center gap-2 mb-3 bg-[#E8F0F8] text-gray-600 px-3 py-1 rounded-full text-xs font-semibold uppercase mx-auto sm:mx-0 w-fit">
                   Lead Specialist
                 </div>
-                <h3 className="text-2xl font-semibold text-gray-900 tracking-tight">Dr. Logesh</h3>
-                <p className="text-sm text-gray-500 font-medium mt-1">Endodontist & Dental Surgeon</p>
+                <h3 className="text-2xl font-semibold text-gray-900 tracking-tight">{CLINIC_DATA.doctors[0].name}</h3>
+                <p className="text-sm text-gray-500 font-medium mt-1">{CLINIC_DATA.doctors[0].role}</p>
                 <div className="flex items-center justify-center sm:justify-start gap-2 mt-4 text-sm font-semibold text-gray-900 bg-gray-50 p-2.5 rounded-xl w-fit mx-auto sm:mx-0">
                   <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" /> 
                   5.0 <span className="text-gray-500 font-medium">({CLINIC_DATA.rating.reviewCount}+ Google Reviews)</span>

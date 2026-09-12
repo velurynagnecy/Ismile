@@ -14,24 +14,24 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "iSMILE DENTAL CLINIC | Dr. Logesh & Dr. Riya | Puducherry",
-  description: "Highest-rated dental clinic in Puducherry (5.0★ from 234 reviews). Painless single-sitting root canals, dental implants, cosmetic veneers & family care at 216 Lenin St, Kuyavarpalayam. Open all 7 days 9 AM–10 PM.",
+  title: "DIGISMILE DENTAL CLINIC | Dr. Sandhosh & Dr. Sandhosh | Puducherry",
+  description: "Highest-rated dental clinic in Puducherry (5.0★ from 132 reviews). Painless single-sitting root canals, dental implants, cosmetic veneers & family care at No 58, Muthu Mariamman Kovil St, Heritage Town, Heritage Town. Monday to Saturday 9 AM–10 PM.",
   keywords: [
-    "iSMILE Dental Clinic",
+    "DIGISMILE Dental Clinic",
     "Dentist Puducherry",
-    "Dental clinic Lenin St Kuyavarpalayam",
-    "Dr Logesh dentist Puducherry",
-    "Dr Riya dentist Puducherry",
+    "Dental clinic Lenin St Heritage Town",
+    "Dr Sandhosh dentist Puducherry",
+    "Dr Sandhosh dentist Puducherry",
     "Painless root canal Puducherry",
     "Dental clinic open 7 days Puducherry",
     "Emergency dental clinic Puducherry",
     "Teeth whitening Puducherry",
     "Dental implants Puducherry"
   ],
-  authors: [{ name: "Dr. Logesh & Dr. Riya" }],
+  authors: [{ name: "Dr. Sandhosh & Dr. Sandhosh" }],
   openGraph: {
-    title: "iSMILE DENTAL CLINIC | 5.0★ Rated Dental Care in Puducherry",
-    description: "Open all 7 days (9:00 AM – 10:00 PM) at 216 Lenin St, Kuyavarpalayam. Painless root canals, dental implants, cosmetic dentistry by Dr. Logesh & Dr. Riya.",
+    title: "DIGISMILE DENTAL CLINIC | 5.0★ Rated Dental Care in Puducherry",
+    description: "Monday to Saturday (9:00 AM – 9:30 PM) at No 58, Muthu Mariamman Kovil St, Heritage Town, Heritage Town. Painless root canals, dental implants, cosmetic dentistry by Dr. Sandhosh & Dr. Sandhosh.",
     type: "website",
     locale: "en_IN",
   },
@@ -49,7 +49,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         
-        {/* Receptionist Priya Chat Widget (Bottom Right) */}
+        {/* Receptionist PSandhosh Chat Widget (Bottom Right) */}
         <ReceptionistChat />
 
         {/* Mobile Sticky Action Bar (Bottom Screen) */}

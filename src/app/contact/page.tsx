@@ -39,7 +39,7 @@ export default function ContactPage() {
             Contact & Directions
           </h1>
           <p className="text-lg font-medium text-gray-500 leading-relaxed">
-            Centrally located on Lenin Street in Kuyavarpalayam. Open every single day from 9:00 AM to 10:00 PM. Walk-ins and scheduled appointments welcome.
+            Centrally located on Lenin Street in Heritage Town. Open every single day from 6:30 PM to 9:30 PM. Walk-ins and scheduled appointments welcome.
           </p>
         </div>
       </div>
@@ -63,10 +63,10 @@ export default function ContactPage() {
                 <div>
                   <div className="text-xs font-semibold text-gray-500 uppercase tracking-widest">Physical Address</div>
                   <div className="text-sm font-semibold text-gray-900 mt-1.5 leading-relaxed">
-                    216, Lenin St, Kuyavarpalayam, Puducherry – 605013
+                    1st Floor, No 58, Muthu Mariamman Kovil St, Heritage Town, Puducherry – 605013
                   </div>
                   <div className="text-xs text-gray-500 mt-1">
-                    Landmark: Near Kuyavarpalayam Main Junction
+                    Landmark: Near Heritage Town Main Junction
                   </div>
                 </div>
               </div>
@@ -78,7 +78,7 @@ export default function ContactPage() {
                 <div>
                   <div className="text-xs font-semibold text-gray-500 uppercase tracking-widest">Working Hours</div>
                   <div className="text-sm font-semibold text-gray-900 mt-1.5">
-                    Open All 7 Days: 9:00 AM – 10:00 PM
+                    Monday to Saturday: 9:00 AM – 9:30 PM
                   </div>
                   <div className="text-xs text-emerald-600 font-medium mt-1">
                     🟢 Evening slots available up to 9:30 PM
@@ -113,7 +113,7 @@ export default function ContactPage() {
                 Chat on WhatsApp
               </a>
               <a
-                href="https://maps.google.com/?q=216+Lenin+St+Kuyavarpalayam+Puducherry+605013"
+                href="https://maps.google.com/?q=216+Lenin+St+Heritage Town+Puducherry+605013"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full bg-gray-900 hover:bg-black text-white font-semibold text-sm py-4 rounded-xl shadow-md flex items-center justify-center gap-2 transition-all"
@@ -154,7 +154,7 @@ export default function ContactPage() {
                     Send Us a Message
                   </h2>
                   <p className="text-sm font-medium text-gray-500 mt-2">
-                    Have questions about root canals, crowns, or insurance? Dr. Logesh and Dr. Riya&apos;s team will get back to you within a few hours.
+                    Have questions about root canals, crowns, or insurance? Dr. Sandhosh and Dr. Sandhosh&apos;s team will get back to you within a few hours.
                   </p>
                 </div>
 
@@ -253,7 +253,7 @@ export default function ContactPage() {
                   Message Sent Successfully!
                 </h3>
                 <p className="text-sm font-medium text-gray-500 max-w-md mx-auto leading-relaxed">
-                  Thank you, <strong>{formData.name}</strong>. Our front desk has received your message. For immediate bookings, feel free to WhatsApp us directly at <strong>+91 73589 32267</strong>.
+                  Thank you, <strong>{formData.name}</strong>. Our front desk has received your message. For immediate bookings, feel free to WhatsApp us directly at <strong>+91 87786 25635</strong>.
                 </p>
                 <div className="pt-6">
                   <button
@@ -279,14 +279,14 @@ export default function ContactPage() {
           <div className="mb-6 px-2 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div>
               <h2 className="text-2xl font-semibold tracking-tight text-gray-900">
-                Interactive Google Map: 216 Lenin St
+                Interactive Google Map: No 58, Muthu Mariamman Kovil St, Heritage Town
               </h2>
               <p className="text-sm font-medium text-gray-500 mt-1">
-                Kuyavarpalayam, Puducherry, 605013
+                Heritage Town, Puducherry, 605013
               </p>
             </div>
             <a
-              href="https://maps.google.com/?q=216+Lenin+St+Kuyavarpalayam+Puducherry+605013"
+              href="https://maps.google.com/?q=216+Lenin+St+Heritage Town+Puducherry+605013"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm font-semibold bg-white hover:bg-gray-100 text-gray-900 px-5 py-3 rounded-xl border border-gray-200 shadow-sm transition-all whitespace-nowrap"
@@ -297,8 +297,8 @@ export default function ContactPage() {
 
           <div className="w-full h-[450px] rounded-[1.5rem] overflow-hidden border border-gray-200 shadow-sm bg-gray-200">
             <iframe
-              title="iSMILE Dental Clinic Lenin St Kuyavarpalayam Puducherry Google Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.654316982959!2d79.8166667!3d11.9333333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a53610b75a133f7%3A0x6b7fa0c73eefb2a8!2s216%2C%20Lenin%20St%2C%20Kuyavarpalayam%2C%20Puducherry%2C%20605013!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              title="DIGISMILE Dental Clinic Lenin St Heritage Town Puducherry Google Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.654316982959!2d79.8166667!3d11.9333333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a53610b75a133f7%3A0x6b7fa0c73eefb2a8!2s216%2C%20Lenin%20St%2C%20Heritage Town%2C%20Puducherry%2C%20605013!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}

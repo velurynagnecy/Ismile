@@ -7,8 +7,8 @@ import { CLINIC_DATA } from '@/lib/clinic-data';
 import BookingWidget from '@/components/BookingWidget';
 
 export const metadata = {
-  title: "Book Dental Appointment Online | iSMILE Dental Clinic Puducherry",
-  description: "Schedule your dental consultation with Dr. Logesh or Dr. Riya at iSMILE Dental Clinic. Open all 7 days from 9 AM to 10 PM. Phone: +91 73589 32267.",
+  title: "Book Dental Appointment Online | DIGISMILE Dental Clinic Puducherry",
+  description: "Schedule your dental consultation with Dr. Sandhosh or Dr. Sandhosh at DIGISMILE Dental Clinic. Monday to Saturday from 9 AM to 10 PM. Phone: +91 87786 25635.",
 };
 
 export default function BookNowPage() {
@@ -25,7 +25,7 @@ export default function BookNowPage() {
             Book Your Visit
           </h1>
           <p className="text-lg font-medium text-gray-500 leading-relaxed">
-            Open all 7 days from <strong className="text-gray-900">9:00 AM to 10:00 PM</strong>. Reserve your preferred slot online, chat directly on WhatsApp, or call our desk at <strong className="text-gray-900">+91 73589 32267</strong> for immediate same-day attention.
+            Monday to Saturday from <strong className="text-gray-900">6:30 PM to 9:30 PM</strong>. Reserve your preferred slot online, chat directly on WhatsApp, or call our desk at <strong className="text-gray-900">+91 87786 25635</strong> for immediate same-day attention.
           </p>
         </div>
       </div>
@@ -49,7 +49,7 @@ export default function BookNowPage() {
                   Google Calendar Live Synchronization
                 </h3>
                 <p className="text-sm font-medium text-gray-600">
-                  Appointments sync directly to Dr. Logesh and Dr. Riya&apos;s daily master schedule.
+                  Appointments sync directly to Dr. Sandhosh and Dr. Sandhosh&apos;s daily master schedule.
                 </p>
               </div>
             </div>
@@ -99,7 +99,7 @@ export default function BookNowPage() {
                 Instant WhatsApp Appointment Desk
               </h3>
               <p className="text-sm font-medium text-gray-300 leading-relaxed">
-                Send us a quick WhatsApp message to check today&apos;s available slots with Dr. Logesh or Dr. Riya.
+                Send us a quick WhatsApp message to check today&apos;s available slots with Dr. Sandhosh or Dr. Sandhosh.
               </p>
               <a
                 href={CLINIC_DATA.whatsappUrl}
@@ -108,7 +108,7 @@ export default function BookNowPage() {
                 className="w-full bg-[#25D366] hover:bg-[#1DA851] text-white font-semibold text-sm py-4 rounded-xl shadow-md flex items-center justify-center gap-2 transition-all"
               >
                 <MessageCircle className="w-5 h-5" />
-                Chat on WhatsApp (+91 73589 32267)
+                Chat on WhatsApp (+91 87786 25635)
               </a>
             </div>
           </div>
@@ -122,21 +122,21 @@ export default function BookNowPage() {
             <div className="space-y-3 text-sm text-gray-600 font-medium">
               <div className="flex justify-between py-2 border-b border-gray-100">
                 <span>Monday – Friday:</span>
-                <span className="font-semibold text-gray-900">9:00 AM – 10:00 PM</span>
+                <span className="font-semibold text-gray-900">9:00 AM – 9:30 PM</span>
               </div>
               <div className="flex justify-between py-2 border-b border-gray-100">
                 <span>Saturday:</span>
-                <span className="font-semibold text-gray-900">9:00 AM – 10:00 PM</span>
+                <span className="font-semibold text-gray-900">9:00 AM – 9:30 PM</span>
               </div>
               <div className="flex justify-between py-2">
-                <span>Sunday:</span>
-                <span className="font-semibold text-gray-900">9:00 AM – 10:00 PM</span>
+                <span>Monday:</span>
+                <span className="font-semibold text-gray-900">9:00 AM – 9:30 PM</span>
               </div>
             </div>
 
             <div className="pt-4 border-t border-gray-100 text-sm font-medium text-gray-600 bg-gray-50 p-4 rounded-xl">
               <strong className="text-gray-900 block font-semibold mb-1">Physical Address:</strong>
-              216, Lenin St, Kuyavarpalayam, Puducherry – 605013.
+              1st Floor, No 58, Muthu Mariamman Kovil St, Heritage Town, Puducherry – 605013.
             </div>
           </div>
 

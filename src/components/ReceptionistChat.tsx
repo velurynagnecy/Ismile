@@ -10,7 +10,7 @@ import { CLINIC_DATA } from '@/lib/clinic-data';
 
 interface ChatMessage {
   id: string;
-  sender: 'user' | 'priya';
+  sender: 'user' | 'pSandhosh';
   text: string;
   time: string;
   isEmergency?: boolean;
@@ -26,13 +26,13 @@ export default function ReceptionistChat() {
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
       id: 'welcome-1',
-      sender: 'priya',
-      text: `Vanakkam! I'm Priya, your virtual receptionist at iSMILE Dental Clinic. We're open all 7 days from 9 AM to 10 PM on Lenin St, Kuyavarpalayam. How can I help you today?`,
+      sender: 'pSandhosh',
+      text: `Vanakkam! I'm PSandhosh, your virtual receptionist at DIGISMILE Dental Clinic. We're Monday to Saturday from 9 AM to 10 PM on Lenin St, Heritage Town. How can I help you today?`,
       time: 'Just now',
       suggestedActions: [
         { label: "Check Open Slots Today", url: "#slots", type: "action" },
         { label: "Root Canal Price", url: "/services", type: "link" },
-        { label: "Directions to 216 Lenin St", url: "/contact", type: "link" }
+        { label: "Directions to No 58, Muthu Mariamman Kovil St, Heritage Town", url: "/contact", type: "link" }
       ]
     }
   ]);
@@ -87,9 +87,9 @@ export default function ReceptionistChat() {
       const data = await res.json();
 
       const assistantMsg: ChatMessage = {
-        id: `priya-${Date.now()}`,
-        sender: 'priya',
-        text: data.reply || "Thank you! Feel free to call us directly at +91 73589 32267.",
+        id: `pSandhosh-${Date.now()}`,
+        sender: 'pSandhosh',
+        text: data.reply || "Thank you! Feel free to call us directly at +91 87786 25635.",
         time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
         isEmergency: data.isEmergency,
         availableSlots: data.availableSlots,
@@ -103,11 +103,11 @@ export default function ReceptionistChat() {
         ...prev,
         {
           id: `err-${Date.now()}`,
-          sender: 'priya',
-          text: `I'm temporarily experiencing a network glitch, but our reception desk is open! Please call Dr. Logesh and Dr. Riya at +91 73589 32267 or message us on WhatsApp.`,
+          sender: 'pSandhosh',
+          text: `I'm temporarily experiencing a network glitch, but our reception desk is open! Please call Dr. Sandhosh and Dr. Sandhosh at +91 87786 25635 or message us on WhatsApp.`,
           time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
           suggestedActions: [
-            { label: "Call +91 73589 32267", url: `tel:${CLINIC_DATA.rawPhone}`, type: "call" },
+            { label: "Call +91 87786 25635", url: `tel:${CLINIC_DATA.rawPhone}`, type: "call" },
             { label: "WhatsApp Desk", url: CLINIC_DATA.whatsappUrl, type: "whatsapp" }
           ]
         }
@@ -133,7 +133,7 @@ export default function ReceptionistChat() {
           <button
             onClick={() => setIsOpen(true)}
             className="group flex items-center gap-3 bg-emerald-900 hover:bg-emerald-950 text-white px-4 py-3.5 rounded-full shadow-sharp border-2 border-ink-900 transition-all transform hover:-translate-y-1 active:translate-y-0"
-            aria-label="Chat with Priya, iSMILE Receptionist"
+            aria-label="Chat with PSandhosh, DIGISMILE Receptionist"
           >
             <div className="relative">
               <div className="w-10 h-10 rounded-full bg-emerald-700 border-2 border-white flex items-center justify-center font-bold text-white text-base">
@@ -144,7 +144,7 @@ export default function ReceptionistChat() {
             <div className="text-left hidden sm:block">
               <div className="text-xs uppercase tracking-wider text-emerald-300 font-bold">Reception Desk</div>
               <div className="text-sm font-black flex items-center gap-1.5">
-                Chat with Priya <span className="text-xs bg-accent-gold text-ink-900 px-1.5 py-0.5 rounded font-black">Online</span>
+                Chat with PSandhosh <span className="text-xs bg-accent-gold text-ink-900 px-1.5 py-0.5 rounded font-black">Online</span>
               </div>
             </div>
             <MessageSquare className="w-5 h-5 sm:hidden text-white" />
@@ -168,13 +168,13 @@ export default function ReceptionistChat() {
               </div>
               <div>
                 <div className="flex items-center gap-2">
-                  <h3 className="font-black text-base text-white tracking-wide">Priya</h3>
+                  <h3 className="font-black text-base text-white tracking-wide">PSandhosh</h3>
                   <span className="text-[10px] uppercase tracking-wider font-extrabold bg-emerald-600 text-white px-2 py-0.5 rounded">
-                    iSMILE Reception
+                    DIGISMILE Reception
                   </span>
                 </div>
                 <p className="text-xs text-emerald-200 font-medium">
-                  216 Lenin St • Open till 10 PM
+                  No 58, Muthu Mariamman Kovil St, Heritage Town • Open till 10 PM
                 </p>
               </div>
             </div>
@@ -201,10 +201,10 @@ export default function ReceptionistChat() {
           <div className="bg-emerald-900/10 border-b-2 border-emerald-900/20 px-3 py-1.5 text-xs text-emerald-950 font-bold flex items-center justify-between">
             <span className="flex items-center gap-1.5">
               <Clock className="w-3.5 h-3.5 text-emerald-700" />
-              Open All 7 Days: 9:00 AM – 10:00 PM
+              Monday to Saturday: 9:00 AM – 9:30 PM
             </span>
             <span className="text-[11px] text-emerald-800 font-extrabold">
-              5.0★ (234 Reviews)
+              5.0★ (132 Reviews)
             </span>
           </div>
 
@@ -235,7 +235,7 @@ export default function ReceptionistChat() {
                       {m.availableSlots.slice(0, 4).map((slot, idx) => (
                         <a
                           key={idx}
-                          href={`https://wa.me/${CLINIC_DATA.whatsappNumber}?text=Hi%20Priya%2C%20I%20would%20like%20to%20reserve%20the%20${encodeURIComponent(slot)}%20slot%20at%20iSMILE.`}
+                          href={`https://wa.me/${CLINIC_DATA.whatsappNumber}?text=Hi%20PSandhosh%2C%20I%20would%20like%20to%20reserve%20the%20${encodeURIComponent(slot)}%20slot%20at%20DIGISMILE.`}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-xs font-black text-center bg-white hover:bg-emerald-900 hover:text-white border-2 border-emerald-800 py-1 px-2 rounded transition"
@@ -292,7 +292,7 @@ export default function ReceptionistChat() {
                 <span className="w-2 h-2 rounded-full bg-emerald-700 animate-bounce" />
                 <span className="w-2 h-2 rounded-full bg-emerald-700 animate-bounce [animation-delay:0.2s]" />
                 <span className="w-2 h-2 rounded-full bg-emerald-700 animate-bounce [animation-delay:0.4s]" />
-                <span className="ml-1 text-xs">Priya is typing...</span>
+                <span className="ml-1 text-xs">PSandhosh is typing...</span>
               </div>
             )}
 
@@ -326,7 +326,7 @@ export default function ReceptionistChat() {
                   handleSendMessage();
                 }
               }}
-              placeholder="Ask Priya about fees, doctors, slots..."
+              placeholder="Ask PSandhosh about fees, doctors, slots..."
               className="flex-1 bg-cream-50 border-2 border-ink-900 rounded-lg px-3 py-2 text-sm text-ink-900 font-medium placeholder:text-ink-600 focus:outline-none focus:ring-2 focus:ring-emerald-700"
             />
             <button

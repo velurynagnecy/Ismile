@@ -6,8 +6,8 @@ export interface SlotCheckResult {
 }
 
 /**
- * Checks Google Calendar availability for iSMILE Dental Clinic (Puducherry, IST timezone).
- * Operating Hours: 9:00 AM – 10:00 PM (all 7 days).
+ * Checks Google Calendar availability for DIGISMILE Dental Clinic (Puducherry, IST timezone).
+ * Operating Hours: 9:00 AM – 9:30 PM (Monday to Saturday).
  */
 export async function checkCalendarAvailability(targetDateStr?: string): Promise<SlotCheckResult> {
   const clientId = process.env.GOOGLE_CALENDAR_CLIENT_ID;
@@ -41,12 +41,12 @@ export async function checkCalendarAvailability(targetDateStr?: string): Promise
   });
 
   if (!clientId || !clientSecret || !refreshToken) {
-    console.info("[iSMILE Calendar] Google Calendar OAuth credentials not fully set in .env.local. Providing verified clinic operating slots.");
+    console.info("[DIGISMILE Calendar] Google Calendar OAuth credentials not fully set in .env.local. Providing verified clinic operating slots.");
     return {
       isConfigured: false,
       date: dateFormatted,
       availableSlots: defaultSlots,
-      message: `iSMILE is open all 7 days from 9:00 AM to 10:00 PM. We have immediate consultation slots open for ${dateFormatted}.`
+      message: `DIGISMILE is Monday to Saturday from 6:30 PM to 9:30 PM. We have immediate consultation slots open for ${dateFormatted}.`
     };
   }
 
@@ -65,12 +65,12 @@ export async function checkCalendarAvailability(targetDateStr?: string): Promise
 
     if (!tokenRes.ok) {
       const errText = await tokenRes.text();
-      console.warn("[iSMILE Calendar] OAuth refresh failed:", errText);
+      console.warn("[DIGISMILE Calendar] OAuth refresh failed:", errText);
       return {
         isConfigured: false,
         date: dateFormatted,
         availableSlots: defaultSlots,
-        message: `Slots for ${dateFormatted} are available between 9:00 AM and 10:00 PM.`
+        message: `Slots for ${dateFormatted} are available between 9:00 AM and 9:30 PM.`
       };
     }
 
@@ -98,12 +98,12 @@ export async function checkCalendarAvailability(targetDateStr?: string): Promise
     });
 
     if (!freeBusyRes.ok) {
-      console.warn("[iSMILE Calendar] FreeBusy query failed:", await freeBusyRes.text());
+      console.warn("[DIGISMILE Calendar] FreeBusy query failed:", await freeBusyRes.text());
       return {
         isConfigured: true,
         date: dateFormatted,
         availableSlots: defaultSlots,
-        message: `Open consultation slots are available for ${dateFormatted} between 9:00 AM and 10:00 PM.`
+        message: `Open consultation slots are available for ${dateFormatted} between 9:00 AM and 9:30 PM.`
       };
     }
 
@@ -138,7 +138,7 @@ export async function checkCalendarAvailability(targetDateStr?: string): Promise
       message: `Verified real-time slots open on ${dateFormatted}.`
     };
   } catch (error) {
-    console.error("[iSMILE Calendar] Error checking availability:", error);
+    console.error("[DIGISMILE Calendar] Error checking availability:", error);
     return {
       isConfigured: false,
       date: dateFormatted,

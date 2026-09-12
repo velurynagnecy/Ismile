@@ -26,14 +26,14 @@ export default function BookingWidget() {
   const handleBooking = (e: React.FormEvent) => {
     e.preventDefault();
     if (!patientName || !patientPhone) {
-      alert("Please enter your name and phone number so Dr. Logesh & Dr. Riya can confirm your slot.");
+      alert("Please enter your name and phone number so Dr. Sandhosh & Dr. Sandhosh can confirm your slot.");
       return;
     }
     setIsSubmitted(true);
   };
 
   const generateWhatsAppUrl = () => {
-    const message = `Hello iSMILE Dental Clinic!\n\nI would like to book an appointment:\n• Patient Name: ${patientName || "Patient"}\n• Phone: ${patientPhone || "Not provided"}\n• Treatment: ${selectedService}\n• Doctor: ${selectedDoctor}\n• Date: ${appointmentDate}\n• Preferred Time: ${selectedTimeSlot}\n• Note: ${notes || "None"}\n\nPlease confirm my slot. Thank you!`;
+    const message = `Hello DIGISMILE Dental Clinic!\n\nI would like to book an appointment:\n• Patient Name: ${patientName || "Patient"}\n• Phone: ${patientPhone || "Not provided"}\n• Treatment: ${selectedService}\n• Doctor: ${selectedDoctor}\n• Date: ${appointmentDate}\n• Preferred Time: ${selectedTimeSlot}\n• Note: ${notes || "None"}\n\nPlease confirm my slot. Thank you!`;
     return `https://wa.me/${CLINIC_DATA.whatsappNumber}?text=${encodeURIComponent(message)}`;
   };
 
@@ -49,7 +49,7 @@ export default function BookingWidget() {
               Reserve Your Consultation Slot
             </h3>
             <p className="text-sm font-medium text-gray-500 mt-2 leading-relaxed">
-              Open all 7 days (9:00 AM – 10:00 PM) at 216 Lenin St, Kuyavarpalayam. Zero wait time guarantee.
+              Monday to Saturday (9:00 AM – 9:30 PM) at No 58, Muthu Mariamman Kovil St, Heritage Town, Heritage Town. Zero wait time guarantee.
             </p>
           </div>
 
@@ -78,11 +78,10 @@ export default function BookingWidget() {
             <label className="block text-sm font-semibold text-gray-900 mb-3">
               2. Preferred Specialist
             </label>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
                 { name: "First Available Specialist", sub: "Fastest slot guarantee" },
-                { name: "Dr. Logesh", sub: "Lead Endodontist" },
-                { name: "Dr. Riya", sub: "Aesthetic Specialist" },
+                { name: "Dr. Sandhosh", sub: "MDS - Implantologist" }
               ].map((doc) => (
                 <button
                   type="button"
@@ -214,7 +213,7 @@ export default function BookingWidget() {
               Slot Request Recorded
             </span>
             <h3 className="text-2xl sm:text-3xl font-semibold tracking-tight text-gray-900 mt-4">
-              Ready to Lock In With Dr. Logesh & Dr. Riya!
+              Ready to Lock In With Dr. Sandhosh & Dr. Sandhosh!
             </h3>
             <p className="text-sm font-medium text-gray-500 mt-3 max-w-md mx-auto leading-relaxed">
               Please tap below to send your pre-formatted appointment details directly to our front desk on WhatsApp for immediate confirmation.

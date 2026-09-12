@@ -23,7 +23,7 @@ export default function Footer() {
                 Highest-Rated Dental Practice in Puducherry
               </p>
               <p className="text-xs text-gray-500 font-medium mt-1">
-                234 Verified Google Reviews • 100% Recommended
+                132 Verified Google Reviews • 100% Recommended
               </p>
             </div>
           </div>
@@ -59,11 +59,11 @@ export default function Footer() {
                 iS
               </div>
               <span className="text-xl font-bold tracking-tight text-gray-900">
-                iSMILE
+                DIGISMILE
               </span>
             </div>
             <p className="text-sm text-gray-500 font-medium leading-relaxed">
-              Pioneering zero-discomfort dental precision in Puducherry under lead specialists Dr. Logesh and Dr. Riya.
+              Pioneering zero-discomfort dental precision in Puducherry under lead specialists Dr. Sandhosh and Dr. Sandhosh.
             </p>
             <div className="pt-2">
               <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-gray-600 bg-white border border-gray-200 px-3 py-1.5 rounded-full shadow-sm">
@@ -112,15 +112,15 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-gray-400 shrink-0" />
                 <span>
-                  <strong className="text-gray-900 block font-semibold mb-0.5">216, Lenin St, Kuyavarpalayam</strong>
+                  <strong className="text-gray-900 block font-semibold mb-0.5">1st Floor, No 58, Muthu Mariamman Kovil St, Heritage Town</strong>
                   Puducherry – 605013
                 </span>
               </div>
               <div className="flex items-start gap-3">
                 <Clock className="w-5 h-5 text-gray-400 shrink-0" />
                 <div>
-                  <strong className="text-gray-900 block font-semibold mb-0.5">Open All 7 Days</strong>
-                  <span>9:00 AM – 10:00 PM</span>
+                  <strong className="text-gray-900 block font-semibold mb-0.5">Monday to Saturday</strong>
+                  <span>9:00 AM – 9:30 PM</span>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -145,7 +145,7 @@ export default function Footer() {
             <Link href="/cookie-notice" className="hover:text-gray-900 transition-colors">Cookie Notice</Link>
           </div>
           <div className="text-center md:text-right">
-            © {new Date().getFullYear()} iSMILE Dental Clinic. All rights reserved.
+            © {new Date().getFullYear()} DIGISMILE Dental Clinic. All rights reserved.
           </div>
         </div>
 

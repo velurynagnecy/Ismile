@@ -4,8 +4,8 @@ import { ArrowLeft } from 'lucide-react';
 import { CLINIC_DATA } from '@/lib/clinic-data';
 
 export const metadata = {
-  title: "Terms of Use | iSMILE Dental Clinic Puducherry",
-  description: "Terms of use, appointment policies, and clinic conditions for iSMILE Dental Clinic Puducherry.",
+  title: "Terms of Use | DIGISMILE Dental Clinic Puducherry",
+  description: "Terms of use, appointment policies, and clinic conditions for DIGISMILE Dental Clinic Puducherry.",
 };
 
 export default function TermsOfUsePage() {
@@ -28,7 +28,7 @@ export default function TermsOfUsePage() {
             Terms of Use & Appointment Policy
           </h1>
           <p className="text-sm font-medium text-gray-500">
-            iSMILE DENTAL CLINIC, 216 Lenin St, Kuyavarpalayam, Puducherry
+            DIGISMILE DENTAL CLINIC, No 58, Muthu Mariamman Kovil St, Heritage Town, Heritage Town, Puducherry
           </p>
         </div>
 
@@ -39,7 +39,7 @@ export default function TermsOfUsePage() {
               1. Scope of Clinic Services
             </h2>
             <p>
-              By booking an appointment or using this website, you agree to these operational terms. All clinical dental consultations and surgical interventions are conducted in-person by Dr. Logesh, Dr. Riya, and credentialed clinical staff at our physical premises located at 216, Lenin St, Kuyavarpalayam, Puducherry 605013.
+              By booking an appointment or using this website, you agree to these operational terms. All clinical dental consultations and surgical interventions are conducted in-person by Dr. Sandhosh, Dr. Sandhosh, and credentialed clinical staff at our physical premises located at 1st Floor, No 58, Muthu Mariamman Kovil St, Heritage Town, Puducherry 605013.
             </p>
           </section>
 
@@ -48,7 +48,7 @@ export default function TermsOfUsePage() {
               2. Appointment Scheduling & Punctuality
             </h2>
             <p>
-              iSMILE maintains a strict <strong>Zero Wait Time</strong> philosophy. We reserve specific chair time exclusively for each patient. We kindly request that you arrive 5 minutes prior to your designated slot. If you need to reschedule, please notify our front desk at least 2 hours in advance via telephone ({CLINIC_DATA.phone}) or WhatsApp.
+              DIGISMILE maintains a strict <strong>Zero Wait Time</strong> philosophy. We reserve specific chair time exclusively for each patient. We kindly request that you arrive 5 minutes prior to your designated slot. If you need to reschedule, please notify our front desk at least 2 hours in advance via telephone ({CLINIC_DATA.phone}) or WhatsApp.
             </p>
           </section>
 
@@ -75,7 +75,7 @@ export default function TermsOfUsePage() {
               5. Contact
             </h2>
             <p>
-              Questions regarding clinic policies can be addressed to {CLINIC_DATA.phone} or by visiting us at 216, Lenin St, Kuyavarpalayam, Puducherry.
+              Questions regarding clinic policies can be addressed to {CLINIC_DATA.phone} or by visiting us at 1st Floor, No 58, Muthu Mariamman Kovil St, Heritage Town, Puducherry.
             </p>
           </section>
 

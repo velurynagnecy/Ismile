@@ -7,8 +7,8 @@ import {
 import { CLINIC_DATA } from '@/lib/clinic-data';
 
 export const metadata = {
-  title: "About Dr. Logesh & Dr. Riya | iSMILE Dental Clinic Puducherry",
-  description: "Meet Dr. Logesh (Lead Endodontist) and Dr. Riya (Aesthetic & Pediatric Dentist) at iSMILE Dental Clinic, 216 Lenin St, Kuyavarpalayam, Puducherry. Open 7 days.",
+  title: "About Dr. Sandhosh & Dr. Sandhosh | DIGISMILE Dental Clinic Puducherry",
+  description: "Meet Dr. Sandhosh (Lead Endodontist) and Dr. Sandhosh (Aesthetic & Pediatric Dentist) at DIGISMILE Dental Clinic, No 58, Muthu Mariamman Kovil St, Heritage Town, Heritage Town, Puducherry. Open 7 days.",
 };
 
 export default function AboutPage() {
@@ -22,10 +22,10 @@ export default function AboutPage() {
             Clinical Leadership & Philosophy
           </span>
           <h1 className="text-4xl sm:text-6xl font-semibold tracking-tight text-gray-900 leading-[1.1]">
-            Meet Dr. Logesh & Dr. Riya
+            Meet Dr. Sandhosh & Dr. Sandhosh
           </h1>
           <p className="text-lg font-medium text-gray-500 leading-relaxed">
-            <strong className="text-gray-900">iSMILE DENTAL CLINIC</strong> was established with a singular mission: to eliminate the fear of dental treatment through hospital-grade technology, precision painless anesthesia, and honest doctor-patient communication.
+            <strong className="text-gray-900">DIGISMILE DENTAL CLINIC</strong> was established with a singular mission: to eliminate the fear of dental treatment through hospital-grade technology, precision painless anesthesia, and honest doctor-patient communication.
           </p>
         </div>
       </div>
@@ -114,7 +114,7 @@ export default function AboutPage() {
         ))}
       </section>
 
-      {/* WHY WE ARE OPEN ALL 7 DAYS TILL 10 PM */}
+      {/* WHY WE ARE Monday to Saturday TILL 10 PM */}
       <section className="max-w-7xl mx-auto px-6 mt-20">
         <div className="bg-gray-900 text-white rounded-[2rem] p-8 sm:p-16 shadow-lg relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900 z-0"></div>
@@ -124,7 +124,7 @@ export default function AboutPage() {
             </div>
 
             <h2 className="text-3xl sm:text-5xl font-semibold tracking-tight text-white leading-[1.1]">
-              Why iSMILE Operates All 7 Days Until 10:00 PM
+              Why DIGISMILE Operates Monday to Saturday Until 9:30 PM
             </h2>
 
             <p className="text-lg font-medium text-gray-300 leading-relaxed">
@@ -143,10 +143,10 @@ export default function AboutPage() {
 
               <div className="bg-white/5 border border-white/10 p-6 rounded-2xl backdrop-blur-sm">
                 <h3 className="text-lg font-semibold text-white mb-2">
-                  Sunday Emergency Availability
+                  Monday Emergency Availability
                 </h3>
                 <p className="text-sm text-gray-400 font-medium leading-relaxed">
-                  Full-service operatory open all Sunday (9:00 AM – 10:00 PM) for emergencies, family checkups, and cosmetic sittings.
+                  Full-service operatory open all Monday (9:00 AM – 9:30 PM) for emergencies, family checkups, and cosmetic sittings.
                 </p>
               </div>
             </div>
@@ -165,7 +165,7 @@ export default function AboutPage() {
               Hospital-Grade Sterilization Protocols
             </h2>
             <p className="text-base font-medium text-gray-500 mt-4 leading-relaxed">
-              We follow strict international barrier sterilization protocols at 216 Lenin St.
+              We follow strict international barrier sterilization protocols at No 58, Muthu Mariamman Kovil St, Heritage Town.
             </p>
           </div>
 
@@ -217,10 +217,10 @@ export default function AboutPage() {
               Physical Practice Address
             </div>
             <div className="text-2xl sm:text-3xl font-semibold text-gray-900 tracking-tight">
-              216, Lenin St, Kuyavarpalayam, Puducherry – 605013
+              1st Floor, No 58, Muthu Mariamman Kovil St, Heritage Town, Puducherry – 605013
             </div>
             <div className="text-sm font-medium text-gray-600 mt-2">
-              Open All 7 Days: 9:00 AM – 10:00 PM • Phone: +91 73589 32267
+              Monday to Saturday: 9:00 AM – 9:30 PM • Phone: +91 87786 25635
             </div>
           </div>
 

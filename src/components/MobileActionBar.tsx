@@ -13,7 +13,7 @@ export default function MobileActionBar() {
         <a
           href={`tel:${CLINIC_DATA.rawPhone}`}
           className="flex flex-col items-center justify-center py-2 bg-white text-ink-900 border-2 border-ink-900 rounded-lg active:bg-cream-200 transition"
-          aria-label="Call iSMILE Dental Clinic"
+          aria-label="Call DIGISMILE Dental Clinic"
         >
           <Phone className="w-4 h-4 text-emerald-800 mb-0.5" />
           <span className="text-[11px] font-black uppercase tracking-wider">Call Now</span>
@@ -25,7 +25,7 @@ export default function MobileActionBar() {
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center justify-center py-2 bg-emerald-800 text-white border-2 border-ink-900 rounded-lg active:bg-emerald-900 transition"
-          aria-label="WhatsApp iSMILE Dental Clinic"
+          aria-label="WhatsApp DIGISMILE Dental Clinic"
         >
           <MessageCircle className="w-4 h-4 mb-0.5" />
           <span className="text-[11px] font-black uppercase tracking-wider">WhatsApp</span>

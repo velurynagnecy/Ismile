@@ -38,7 +38,7 @@ export default function Header() {
               iS
             </div>
             <span className={`text-xl font-bold tracking-tight transition-colors ${scrolled ? 'text-gray-900' : 'text-white'}`}>
-              iSMILE
+              DIGISMILE
             </span>
           </Link>
 

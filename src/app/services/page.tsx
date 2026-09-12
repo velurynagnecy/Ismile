@@ -7,8 +7,8 @@ import {
 import { CLINIC_DATA } from '@/lib/clinic-data';
 
 export const metadata = {
-  title: "Services & Transparent Dental Fees | iSMILE Dental Clinic Puducherry",
-  description: "Transparent fee schedule for painless root canals, zirconia crowns, dental implants, pediatric dentistry, and cosmetic makeovers at iSMILE Puducherry.",
+  title: "Services & Transparent Dental Fees | DIGISMILE Dental Clinic Puducherry",
+  description: "Transparent fee schedule for painless root canals, zirconia crowns, dental implants, pediatric dentistry, and cosmetic makeovers at DIGISMILE Puducherry.",
 };
 
 export default function ServicesPage() {
@@ -25,7 +25,7 @@ export default function ServicesPage() {
             Services & Transparent Fees
           </h1>
           <p className="text-lg font-medium text-gray-500 leading-relaxed">
-            At <strong className="text-gray-900">iSMILE DENTAL CLINIC</strong>, we believe honest dental care starts with clear, upfront costs. Every patient receives an itemized treatment estimate before any procedure starts. Zero hidden clinic charges.
+            At <strong className="text-gray-900">DIGISMILE DENTAL CLINIC</strong>, we believe honest dental care starts with clear, upfront costs. Every patient receives an itemized treatment estimate before any procedure starts. Zero hidden clinic charges.
           </p>
         </div>
       </div>
@@ -49,7 +49,7 @@ export default function ServicesPage() {
               </div>
 
               <p className="text-base font-medium text-gray-300 leading-relaxed">
-                Dr. Logesh specializes in German rotary micro-endodontics. By using computerized apex locators and advanced local anesthesia, we eliminate tooth infections and nerve pain in just 45 to 60 minutes. You can eat comfortably and resume work the exact same day.
+                Dr. Sandhosh specializes in German rotary micro-endodontics. By using computerized apex locators and advanced local anesthesia, we eliminate tooth infections and nerve pain in just 45 to 60 minutes. You can eat comfortably and resume work the exact same day.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
@@ -85,7 +85,7 @@ export default function ServicesPage() {
                   className="bg-white/10 hover:bg-white/20 text-white font-semibold text-sm px-8 py-4 rounded-full transition-all flex items-center gap-2 border border-white/20 backdrop-blur-md"
                 >
                   <MessageCircle className="w-5 h-5" />
-                  Ask Dr. Logesh on WhatsApp
+                  Ask Dr. Sandhosh on WhatsApp
                 </a>
               </div>
             </div>
@@ -131,7 +131,7 @@ export default function ServicesPage() {
             Full Clinical Treatment Directory
           </h2>
           <p className="text-base font-medium text-gray-500 mt-3">
-            All treatments are personally carried out by Dr. Logesh & Dr. Riya at 216 Lenin St.
+            All treatments are personally carried out by Dr. Sandhosh & Dr. Sandhosh at No 58, Muthu Mariamman Kovil St, Heritage Town.
           </p>
         </div>
 
@@ -191,7 +191,7 @@ export default function ServicesPage() {
                   Book Appointment
                 </Link>
                 <a
-                  href={`https://wa.me/${CLINIC_DATA.whatsappNumber}?text=Hi%2C%20I%20have%20a%20question%20regarding%20${encodeURIComponent(svc.name)}%20at%20iSMILE.`}
+                  href={`https://wa.me/${CLINIC_DATA.whatsappNumber}?text=Hi%2C%20I%20have%20a%20question%20regarding%20${encodeURIComponent(svc.name)}%20at%20DIGISMILE.`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 bg-white hover:bg-gray-50 text-emerald-600 rounded-xl border border-gray-200 transition-all flex items-center justify-center shadow-sm"
@@ -238,7 +238,7 @@ export default function ServicesPage() {
               Need An Immediate Second Opinion?
             </h3>
             <p className="text-base font-medium text-gray-600 mt-3">
-              Bring your past X-rays or reports to 216 Lenin St. Consultation starts at ₹300.
+              Bring your past X-rays or reports to No 58, Muthu Mariamman Kovil St, Heritage Town. Consultation starts at ₹300.
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 shrink-0">

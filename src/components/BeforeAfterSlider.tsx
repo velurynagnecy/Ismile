@@ -23,10 +23,10 @@ export default function BeforeAfterSlider({
   beforeAlt = "Before dental procedure",
   afterAlt = "After dental procedure",
   beforeLabel = "BEFORE TREATMENT",
-  afterLabel = "AFTER iSMILE RESTORATION",
+  afterLabel = "AFTER DIGISMILE RESTORATION",
   caseTitle,
   caseDescription,
-  doctorName = "Dr. Logesh & Dr. Riya",
+  doctorName = "Dr. Sandhosh & Dr. Sandhosh",
   duration = "Single Sitting"
 }: BeforeAfterSliderProps) {
   const [sliderPosition, setSliderPosition] = useState(50);

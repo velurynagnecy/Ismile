@@ -30,7 +30,7 @@ export async function POST(req: NextRequest) {
     if (isRateLimited(ip)) {
       return NextResponse.json(
         {
-          error: "Too many messages sent. Please wait a moment or call our desk directly at +91 73589 32267.",
+          error: "Too many messages sent. Please wait a moment or call our desk directly at +91 87786 25635.",
           isRateLimited: true,
         },
         { status: 429 }
@@ -56,19 +56,19 @@ export async function POST(req: NextRequest) {
     if (checkCalendarForDate || dateQueryMatch) {
       const calData = await checkCalendarAvailability(checkCalendarForDate);
       detectedSlots = calData.availableSlots;
-      calendarContext = `Real-Time Calendar Status for ${calData.date}: Open consultation slots include ${detectedSlots.slice(0, 4).join(', ')}. Clinic is open 9:00 AM – 10:00 PM.`;
+      calendarContext = `Real-Time Calendar Status for ${calData.date}: Open consultation slots include ${detectedSlots.slice(0, 4).join(', ')}. Clinic is open 6:30 PM – 9:30 PM (Mon-Sat).`;
     }
 
     // Check for Groq API Key
     const groqKey = process.env.GROQ_API_KEY;
 
     if (!groqKey) {
-      console.warn("[iSMILE Priya Chat] GROQ_API_KEY is not configured in .env.local. Providing accurate verified clinic fallback response.");
+      console.warn("[DIGISMILE Priya Chat] GROQ_API_KEY is not configured in .env.local. Providing accurate verified clinic fallback response.");
 
       // Intelligent rule-based clinic response fallback
       if (isEmergency) {
         return NextResponse.json({
-          reply: `Dental emergencies require immediate hands-on attention. Dr. Logesh and Dr. Riya prioritize urgent cases with zero wait time. Please call our direct clinic line right now or tap WhatsApp below. We are located at 216 Lenin St, open until 10:00 PM today.`,
+          reply: `Dental emergencies require immediate hands-on attention. Dr. Sandhosh prioritizes urgent cases. Please call our direct clinic line right now or tap WhatsApp below. We are located at 1st Floor, No 58, Muthu Mariamman Kovil St, Heritage Town, open 6:30 PM to 9:30 PM.`,
           isEmergency: true,
           suggestedActions: [
             { label: "Call Doctor Now", url: `tel:${CLINIC_DATA.rawPhone}`, type: "call" },
@@ -78,16 +78,16 @@ export async function POST(req: NextRequest) {
         });
       }
 
-      let fallbackReply = `Hello! I'm Priya, front-desk receptionist at iSMILE Dental Clinic. We are open all 7 days from 9:00 AM to 10:00 PM at 216 Lenin St, Kuyavarpalayam, Puducherry.`;
+      let fallbackReply = `Hello! I'm Priya, front-desk receptionist at DIGISMILE. We are open Monday to Saturday from 6:30 PM to 9:30 PM at Heritage Town, Puducherry.`;
       
-      if (queryText.toLowerCase().includes('root canal') || queryText.toLowerCase().includes('rct')) {
-        fallbackReply += ` Dr. Logesh specializes in single-sitting painless root canals (₹2,500 – ₹5,500) using German rotary tech. Would you like to reserve a consultation?`;
+      if (queryText.toLowerCase().includes('implant')) {
+        fallbackReply += ` Dr. Sandhosh is an MDS specialist in dental implants, successfully handling complex cases. Would you like to reserve a consultation?`;
       } else if (queryText.toLowerCase().includes('price') || queryText.toLowerCase().includes('cost') || queryText.toLowerCase().includes('fee')) {
-        fallbackReply += ` Consultations are ₹300–₹500 with digital X-rays. Scaling is ₹1,000–₹2,000, and Zirconia crowns are ₹6,000–₹14,000 with transparent upfront pricing.`;
+        fallbackReply += ` We provide transparent estimates after a detailed consultation with Dr. Sandhosh.`;
       } else if (detectedSlots.length > 0) {
         fallbackReply += ` Today we have open slots available around ${detectedSlots.slice(0, 3).join(', ')}. Tap below to confirm on WhatsApp or our Book Now page!`;
       } else {
-        fallbackReply += ` How can I assist you today? You can ask about our treatments, check open slots with Dr. Logesh and Dr. Riya, or get directions.`;
+        fallbackReply += ` How can I assist you today? You can ask about our implants, check open slots with Dr. Sandhosh, or get directions.`;
       }
 
       return NextResponse.json({
@@ -102,34 +102,31 @@ export async function POST(req: NextRequest) {
     }
 
     // System prompt with strict clinic guardrails
-    const systemPrompt = `You are Priya, the friendly, professional, and warm front-desk receptionist at iSMILE DENTAL CLINIC in Puducherry, India.
+    const systemPrompt = `You are Priya, the friendly, professional, and warm front-desk receptionist at DIGISMILE Advanced Digital Dental Clinic and Implant Centre in Puducherry, India.
 
 CRITICAL INSTRUCTIONS & RULES:
 1. CLINIC FACTS (USE ONLY THESE DETAILS, NEVER INVENT CLINIC FACTS):
-   - Clinic Name: iSMILE DENTAL CLINIC
-   - Address: 216, Lenin St, Kuyavarpalayam, Puducherry, 605013 (Landmark: Near Kuyavarpalayam main junction)
-   - Phone: +91 73589 32267
-   - Hours: Open all 7 days a week, 9:00 AM – 10:00 PM (open late for working professionals)
-   - Lead Doctors: 
-     * Dr. Logesh (Lead Dental Surgeon & Endodontist, 12+ yrs exp, specialist in single-sitting painless Root Canals and Implants)
-     * Dr. Riya (Chief Aesthetic Dentist & Pediatric Specialist, 10+ yrs exp, specialist in digital smile design, veneers, and gentle child dentistry)
-   - Google Rating: 5.0 stars with 234+ verified reviews (praised for 100% painless treatment, zero wait time, and sterile environment)
-   - Key Pricing:
-     * Consultation & Digital X-Ray: ₹300 – ₹500
-     * Single-Sitting Painless Root Canal (RCT): ₹2,500 – ₹5,500
-     * Ultrasonic Teeth Scaling & Polishing: ₹1,000 – ₹2,000
-     * CAD/CAM Zirconia Crowns: ₹6,000 – ₹14,000
-     * Cosmetic Dental Veneers: ₹4,500 – ₹12,000 / tooth
-     * Dental Implants: ₹25,000 – ₹45,000
-     * Pediatric Care & Milk Tooth Treatments: ₹1,200 – ₹3,500
+   - Clinic Name: DIGISMILE Advanced Digital Dental Clinic and Implant Centre
+   - Address: 1st Floor, No 58, Muthu Mariamman Kovil St, Heritage Town, Puducherry, 605001
+   - Phone: +91 87786 25635
+   - Hours: Monday to Saturday, 6:30 PM – 9:30 PM (Closed on Sundays)
+   - Lead Doctor: 
+     * Dr. G. Sandhosh (MDS, Lead Dental Surgeon & Implantologist, specialist in digital dental implants and handling complex cases rushed or denied elsewhere)
+   - Google Rating: 5.0 stars with 132+ verified reviews (praised for thorough explanations of treatments and precautions, modern equipment, and friendly staff)
+   - Key Services:
+     * Digital Dental Implants
+     * Single-Sitting Root Canal (RCT)
+     * CAD/CAM Zirconia Crowns
+     * Comprehensive Checkups & Digital X-Rays
+     * Ultrasonic Scaling
 
 2. APPOINTMENTS & CALENDAR:
-   - When asked about availability or appointment times, quote the open slots provided in context: ${calendarContext || "Slots available daily between 9:00 AM and 10:00 PM"}.
-   - Explain that to lock in their slot, they can use the "Book Now" page or send a quick WhatsApp to +91 73589 32267. You do NOT book or create calendar events yourself.
+   - When asked about availability or appointment times, quote the open slots provided in context: ${calendarContext || "Slots available Mon-Sat between 6:30 PM and 9:30 PM"}.
+   - Explain that to lock in their slot, they can use the "Book Now" page or send a quick WhatsApp to +91 87786 25635. You do NOT book or create calendar events yourself.
 
 3. MEDICAL & EMERGENCY GUARDRAIL:
    - You are a receptionist, NOT a diagnosing dentist. Never attempt to diagnose complex pathology or prescribe medications.
-   - If the patient mentions severe pain, bleeding, swelling, sudden dental trauma, or asks urgent medical questions, IMMEDIATELY advise them to call Dr. Logesh / Dr. Riya at +91 73589 32267 or visit 216 Lenin St right away.
+   - If the patient mentions severe pain, bleeding, swelling, sudden dental trauma, or asks urgent medical questions, IMMEDIATELY advise them to call Dr. Sandhosh at +91 87786 25635 or visit the clinic right away.
 
 4. TONE:
    - Warm, respectful, concise, professional Indian hospitality. Keep replies under 3-4 sentences so visitors on mobile can read easily.`;
@@ -155,9 +152,9 @@ CRITICAL INSTRUCTIONS & RULES:
 
     if (!groqResponse.ok) {
       const err = await groqResponse.text();
-      console.error("[iSMILE Groq Error]:", err);
+      console.error("[DIGISMILE Groq Error]:", err);
       return NextResponse.json({
-        reply: `I'm right here at the iSMILE front desk! We are open until 10:00 PM at 216 Lenin St, Kuyavarpalayam. For immediate booking or inquiries, you can reach Dr. Logesh & Dr. Riya directly at +91 73589 32267 or tap WhatsApp below.`,
+        reply: `I'm right here at the DIGISMILE front desk! We are open from 6:30 PM to 9:30 PM at Heritage Town. For immediate booking or inquiries, you can reach Dr. Sandhosh directly at +91 87786 25635 or tap WhatsApp below.`,
         isEmergency,
         availableSlots: detectedSlots,
         suggestedActions: [
@@ -168,14 +165,14 @@ CRITICAL INSTRUCTIONS & RULES:
     }
 
     const groqData = await groqResponse.json();
-    const assistantReply = groqData.choices?.[0]?.message?.content || "Thank you for contacting iSMILE Dental Clinic!";
+    const assistantReply = groqData.choices?.[0]?.message?.content || "Thank you for contacting DIGISMILE Dental Clinic!";
 
     return NextResponse.json({
       reply: assistantReply,
       isEmergency,
       availableSlots: detectedSlots,
       suggestedActions: isEmergency ? [
-        { label: "Call Doctor Now (+91 73589 32267)", url: `tel:${CLINIC_DATA.rawPhone}`, type: "call" },
+        { label: "Call Doctor Now (+91 87786 25635)", url: `tel:${CLINIC_DATA.rawPhone}`, type: "call" },
         { label: "WhatsApp Emergency", url: CLINIC_DATA.whatsappUrl, type: "whatsapp" }
       ] : [
         { label: "Book Appointment", url: "/book", type: "link" },
@@ -184,10 +181,10 @@ CRITICAL INSTRUCTIONS & RULES:
     });
 
   } catch (error) {
-    console.error("[iSMILE Chat API Error]:", error);
+    console.error("[DIGISMILE Chat API Error]:", error);
     return NextResponse.json(
       {
-        reply: "Welcome to iSMILE Dental Clinic! We are open daily from 9:00 AM to 10:00 PM. Please call us at +91 73589 32267 or reach us on WhatsApp for immediate appointments.",
+        reply: "Welcome to DIGISMILE Dental Clinic! We are open Monday-Saturday from 6:30 PM to 9:30 PM. Please call us at +91 87786 25635 or reach us on WhatsApp for immediate appointments.",
         suggestedActions: [
           { label: "Call Now", url: `tel:${CLINIC_DATA.rawPhone}`, type: "call" },
           { label: "WhatsApp Us", url: CLINIC_DATA.whatsappUrl, type: "whatsapp" }

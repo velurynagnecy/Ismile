@@ -4,8 +4,8 @@ import { ArrowLeft, Cookie } from 'lucide-react';
 import { CLINIC_DATA } from '@/lib/clinic-data';
 
 export const metadata = {
-  title: "Cookie Notice | iSMILE Dental Clinic Puducherry",
-  description: "Cookie notice and technical session policies for iSMILE Dental Clinic Puducherry.",
+  title: "Cookie Notice | DIGISMILE Dental Clinic Puducherry",
+  description: "Cookie notice and technical session policies for DIGISMILE Dental Clinic Puducherry.",
 };
 
 export default function CookieNoticePage() {
@@ -28,7 +28,7 @@ export default function CookieNoticePage() {
             Cookie Notice
           </h1>
           <p className="text-sm font-medium text-gray-500">
-            iSMILE DENTAL CLINIC, Puducherry
+            DIGISMILE DENTAL CLINIC, Puducherry
           </p>
         </div>
 
@@ -48,7 +48,7 @@ export default function CookieNoticePage() {
             <h2 className="text-lg font-semibold text-gray-900">
               2. How We Use Cookies
             </h2>
-            <p>iSMILE uses only essential and functional cookies:</p>
+            <p>DIGISMILE uses only essential and functional cookies:</p>
             <ul className="list-disc pl-5 space-y-2">
               <li><strong>Essential Technical Cookies:</strong> To ensure proper loading of interactive elements such as our before/after smile comparison slider and booking form.</li>
               <li><strong>Security & Anti-Abuse:</strong> To prevent malicious automated traffic and enforce rate limiting on our appointment and AI assistant routes.</li>
@@ -61,7 +61,7 @@ export default function CookieNoticePage() {
               3. Managing Your Preferences
             </h2>
             <p>
-              You can modify your browser settings to decline cookies if you prefer. Most features of the iSMILE website will continue to function normally.
+              You can modify your browser settings to decline cookies if you prefer. Most features of the DIGISMILE website will continue to function normally.
             </p>
           </section>
 
@@ -70,7 +70,7 @@ export default function CookieNoticePage() {
               4. Inquiries
             </h2>
             <p>
-              For questions regarding our website policies, contact our practice at {CLINIC_DATA.phone} or visit 216 Lenin St, Kuyavarpalayam, Puducherry.
+              For questions regarding our website policies, contact our practice at {CLINIC_DATA.phone} or visit No 58, Muthu Mariamman Kovil St, Heritage Town, Heritage Town, Puducherry.
             </p>
           </section>
 

@@ -4,8 +4,8 @@ import { ShieldCheck, Lock, ArrowLeft } from 'lucide-react';
 import { CLINIC_DATA } from '@/lib/clinic-data';
 
 export const metadata = {
-  title: "Privacy Policy (DPDP Act 2023) | iSMILE Dental Clinic Puducherry",
-  description: "Privacy policy and patient health data protection practices at iSMILE Dental Clinic, complying with India's Digital Personal Data Protection Act 2023.",
+  title: "Privacy Policy (DPDP Act 2023) | DIGISMILE Dental Clinic Puducherry",
+  description: "Privacy policy and patient health data protection practices at DIGISMILE Dental Clinic, complying with India's Digital Personal Data Protection Act 2023.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -28,7 +28,7 @@ export default function PrivacyPolicyPage() {
             Privacy Policy & Patient Data Protection
           </h1>
           <p className="text-sm font-medium text-gray-500">
-            Effective Date: September 2026 • iSMILE DENTAL CLINIC, Puducherry
+            Effective Date: September 2026 • DIGISMILE DENTAL CLINIC, Puducherry
           </p>
         </div>
 
@@ -39,7 +39,7 @@ export default function PrivacyPolicyPage() {
               1. Commitment to India&apos;s DPDP Act 2023
             </h2>
             <p>
-              iSMILE DENTAL CLINIC (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;), located at 216, Lenin St, Kuyavarpalayam, Puducherry 605013, is fully committed to protecting your personal health data in compliance with India&apos;s <strong>Digital Personal Data Protection Act, 2023 (DPDP Act)</strong> and applicable healthcare regulations.
+              DIGISMILE DENTAL CLINIC (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;), located at 1st Floor, No 58, Muthu Mariamman Kovil St, Heritage Town, Puducherry 605013, is fully committed to protecting your personal health data in compliance with India&apos;s <strong>Digital Personal Data Protection Act, 2023 (DPDP Act)</strong> and applicable healthcare regulations.
             </p>
           </section>
 
@@ -51,7 +51,7 @@ export default function PrivacyPolicyPage() {
             <ul className="list-disc pl-5 space-y-2">
               <li>Contact details: Name, phone number, email, residential locality in Puducherry.</li>
               <li>Clinical records: Medical history, allergies, medications, digital dental radiographs (RVG X-rays), and treatment charts.</li>
-              <li>Appointment logistics: Preferred booking times, attending doctor preference (Dr. Logesh or Dr. Riya).</li>
+              <li>Appointment logistics: Preferred booking times, attending doctor preference (Dr. Sandhosh or Dr. Sandhosh).</li>
             </ul>
           </section>
 
@@ -69,7 +69,7 @@ export default function PrivacyPolicyPage() {
               4. Data Security & Retention
             </h2>
             <p>
-              Digital radiographs and dental charts are stored securely with encrypted backups. Only authorized medical staff under Dr. Logesh and Dr. Riya have access to diagnostic records.
+              Digital radiographs and dental charts are stored securely with encrypted backups. Only authorized medical staff under Dr. Sandhosh and Dr. Sandhosh have access to diagnostic records.
             </p>
           </section>
 
@@ -95,8 +95,8 @@ export default function PrivacyPolicyPage() {
             </p>
             <div className="p-6 bg-white rounded-2xl border border-gray-100 shadow-sm text-sm font-semibold text-gray-900 space-y-2">
               <div>Data Grievance Officer: Clinic Administration</div>
-              <div>iSMILE DENTAL CLINIC, 216, Lenin St, Kuyavarpalayam, Puducherry – 605013</div>
-              <div className="text-gray-500 font-medium">Phone: {CLINIC_DATA.phone} • Email: care@ismiledental.in</div>
+              <div>DIGISMILE DENTAL CLINIC, 1st Floor, No 58, Muthu Mariamman Kovil St, Heritage Town, Puducherry – 605013</div>
+              <div className="text-gray-500 font-medium">Phone: {CLINIC_DATA.phone} • Email: care@DIGISMILEdental.in</div>
             </div>
           </section>
 

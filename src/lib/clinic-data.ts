@@ -34,73 +34,75 @@ export interface Testimonial {
 }
 
 export const CLINIC_DATA = {
-  name: "iSMILE DENTAL CLINIC",
-  tagline: "Painless Dental Precision. Every Single Day.",
-  shortAddress: "216, Lenin St, Kuyavarpalayam, Puducherry",
-  fullAddress: "216, Lenin St, Kuyavarpalayam, Puducherry, 605013",
-  phone: "+91 73589 32267",
-  rawPhone: "+917358932267",
-  whatsappNumber: "917358932267",
-  whatsappUrl: "https://wa.me/917358932267?text=Hi%20iSMILE%20Dental%20Clinic%2C%20I%20would%20like%20to%20book%20an%20appointment.",
-  hours: "Open all 7 days, 9:00 AM – 10:00 PM",
+  name: "DIGISMILE Advanced Digital Dental Clinic and Implant Centre",
+  tagline: "Advanced Digital Dentistry & Expert Implantology.",
+  shortAddress: "1st Floor, No 58, Muthu Mariamman Kovil St, Heritage Town, Puducherry",
+  fullAddress: "1st Floor, No 58, Muthu Mariamman Kovil St, Heritage Town, Puducherry, 605001",
+  phone: "+91 87786 25635",
+  rawPhone: "+918778625635",
+  whatsappNumber: "918778625635",
+  whatsappUrl: "https://wa.me/918778625635?text=Hi%20DIGISMILE%20Dental%20Clinic%2C%20I%20would%20like%20to%20book%20an%20appointment.",
+  hours: "Mon-Sat: 6:30 PM – 9:30 PM (Closed Sunday)",
   hoursDetail: {
-    monday: "9:00 AM – 10:00 PM",
-    tuesday: "9:00 AM – 10:00 PM",
-    wednesday: "9:00 AM – 10:00 PM",
-    thursday: "9:00 AM – 10:00 PM",
-    friday: "9:00 AM – 10:00 PM",
-    saturday: "9:00 AM – 10:00 PM",
-    sunday: "9:00 AM – 10:00 PM",
+    monday: "6:30 PM – 9:30 PM",
+    tuesday: "6:30 PM – 9:30 PM",
+    wednesday: "6:30 PM – 9:30 PM",
+    thursday: "6:30 PM – 9:30 PM",
+    friday: "6:30 PM – 9:30 PM",
+    saturday: "6:30 PM – 9:30 PM",
+    sunday: "Closed",
   },
   rating: {
     score: 5.0,
-    reviewCount: 234,
+    reviewCount: 132,
     platform: "Google Verified Reviews",
     percentageRecommendation: "100%",
   },
   doctors: [
     {
-      name: "Dr. Logesh",
-      role: "Lead Dental Surgeon & Endodontist",
-      qualifications: "BDS, MDS - Endodontics & Conservative Dentistry",
-      experience: "12+ Years Clinical Excellence",
+      name: "Dr. G. Sandhosh",
+      role: "Lead Dental Surgeon & Implantologist",
+      qualifications: "BDS, MDS",
+      experience: "Advanced Implant Specialist",
       specialties: [
-        "Single-Sitting Painless Root Canal",
-        "Micro-Endodontics & Re-Treatments",
+        "Digital Dental Implants & Bone Grafting",
         "Full Mouth Rehabilitation",
-        "Dental Implants & Bone Grafting"
+        "Single-Sitting Root Canal",
+        "Surgical Extractions"
       ],
-      bio: "Renowned across Puducherry for pioneering pain-free rotary endodontics, Dr. Logesh has performed thousands of successful root canal treatments with zero patient discomfort. His conservative philosophy prioritizes preserving natural tooth structure above all else.",
-      quote: "Modern dentistry should never be synonymous with pain. With precision rotary tools and gentle local anesthesia, our patients often fall asleep during root canals.",
+      bio: "Dr. G. Sandhosh brings expert digital dentistry and precision implantology to Heritage Town. He is highly praised for taking the time to thoroughly explain every step of the treatment and precautions to his patients, successfully handling complex implant cases that were rushed or denied elsewhere.",
+      quote: "Every patient deserves to fully understand their treatment plan. We believe in transparency, advanced technology, and ensuring no one leaves without a confident, healthy smile.",
       image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=800&auto=format&fit=crop"
-    },
-    {
-      name: "Dr. Riya",
-      role: "Chief Aesthetic Dentist & Pediatric Specialist",
-      qualifications: "BDS, Fellowship in Aesthetic & Pediatric Dentistry",
-      experience: "10+ Years Dedicated Practice",
-      specialties: [
-        "Digital Smile Designing & Veneers",
-        "Pediatric Pain-Free Pulpectomy",
-        "Laser Teeth Whitening & Bonding",
-        "Preventive Dentistry for Families"
-      ],
-      bio: "Dr. Riya combines artistic precision with a remarkably calming bedside manner that transforms anxious patients—especially young children—into confident clinic regulars. She specializes in minimally invasive cosmetic enhancements and family oral healthcare.",
-      quote: "A genuinely healthy, confident smile changes how you carry yourself every day. We make sure every visit feels calm, clean, and empowering.",
-      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=800&auto=format&fit=crop"
     }
   ] as Doctor[],
   services: [
     {
+      id: "dental-implants",
+      name: "Titanium & Digital Dental Implants",
+      category: "Surgical",
+      priceRange: "Custom Estimate",
+      duration: "2 – 3 Sittings",
+      isHighlighted: true,
+      isPopular: true,
+      painLevel: "Mild soreness for 24h",
+      description: "Permanent replacement for missing teeth using world-class implants that integrate securely into the jawbone, handled expertly by Dr. Sandhosh.",
+      benefits: [
+        "Handled properly even if denied elsewhere",
+        "Prevents jaw bone loss and facial sagging",
+        "Looks, chews, and cleans exactly like natural teeth",
+        "Thorough explanation of all precautions"
+      ]
+    },
+    {
       id: "root-canal",
       name: "Single-Sitting Painless Root Canal (RCT)",
       category: "Restorative",
-      priceRange: "₹2,500 – ₹5,500",
+      priceRange: "Custom Estimate",
       duration: "45 – 60 Minutes",
-      isHighlighted: true,
+      isHighlighted: false,
       isPopular: true,
       painLevel: "0/10 Painless Guarantee",
-      description: "Our signature procedure praised repeatedly in over 200+ patient reviews. Utilizing high-torque German rotary endodontic motors and digital apex locators to eliminate infection in a single visit without pain.",
+      description: "Utilizing advanced rotary endodontic motors and digital apex locators to eliminate infection safely and comfortably.",
       benefits: [
         "Single-sitting completion in most cases",
         "Computer-assisted local anesthesia delivery",
@@ -112,15 +114,15 @@ export const CLINIC_DATA = {
       id: "general-dentistry",
       name: "Comprehensive Checkup & Digital X-Rays",
       category: "Preventive",
-      priceRange: "₹300 – ₹500",
+      priceRange: "Consultation Fee Applies",
       duration: "20 – 30 Minutes",
       isPopular: false,
       painLevel: "Completely Painless",
-      description: "Ultra-low radiation high-resolution digital RVG radiography paired with 32-point comprehensive oral screening for cavities, gums, and oral mucosal health.",
+      description: "High-resolution digital radiography paired with a comprehensive oral screening. Dr. Sandhosh explains every detail of the findings.",
       benefits: [
         "Instant on-screen digital radiographic review",
         "Full transparent treatment roadmap",
-        "No hidden charges or unnecessary procedures",
+        "Thorough explanation of treatments",
         "Oral cancer & gum health screening included"
       ]
     },
@@ -128,11 +130,11 @@ export const CLINIC_DATA = {
       id: "ultrasonic-scaling",
       name: "Ultrasonic Scaling & Deep Polishing",
       category: "Preventive",
-      priceRange: "₹1,000 – ₹2,000",
+      priceRange: "Custom Estimate",
       duration: "30 – 40 Minutes",
       isPopular: true,
       painLevel: "Mild Vibration Only",
-      description: "Advanced piezoelectric ultrasonic scaling removes stubborn calculus, nicotine stains, and bacterial biofilm without scratching natural tooth enamel.",
+      description: "Advanced piezoelectric ultrasonic scaling removes stubborn calculus, nicotine stains, and bacterial biofilm.",
       benefits: [
         "Eliminates bad breath (halitosis)",
         "Stops bleeding and inflamed gums",
@@ -141,80 +143,16 @@ export const CLINIC_DATA = {
       ]
     },
     {
-      id: "cosmetic-smile",
-      name: "Cosmetic Dentistry & Ceramic Veneers",
-      category: "Cosmetic",
-      priceRange: "₹4,500 – ₹12,000 / tooth",
-      duration: "2 Sessions",
-      isPopular: true,
-      painLevel: "Zero Pain",
-      description: "Custom-sculpted ultra-thin E-max ceramic veneers, gap closures (diastema), and composite bonding engineered to craft your ideal aesthetic smile.",
-      benefits: [
-        "Natural translucency and lifelike light reflection",
-        "Stain-resistant high-grade ceramic",
-        "Corrects chipped, discolored, or uneven teeth",
-        "Digitally previewed before permanent bonding"
-      ]
-    },
-    {
-      id: "dental-implants",
-      name: "Titanium & Zirconia Dental Implants",
-      category: "Surgical",
-      priceRange: "₹25,000 – ₹45,000",
-      duration: "2 – 3 Sittings",
-      isPopular: false,
-      painLevel: "Mild soreness for 24h",
-      description: "Permanent replacement for missing teeth using world-class grade-5 titanium implants that integrate securely into jawbone, restoring 100% chew power.",
-      benefits: [
-        "Lifetime structural durability",
-        "Prevents jaw bone loss and facial sagging",
-        "Looks, chews, and cleans exactly like natural teeth",
-        "No damage to adjacent healthy teeth"
-      ]
-    },
-    {
-      id: "pediatric-care",
-      name: "Pediatric & Gentle Child Dental Care",
-      category: "Pediatric",
-      priceRange: "₹1,200 – ₹3,500",
-      duration: "30 – 45 Minutes",
-      isPopular: true,
-      painLevel: "100% Fear-Free",
-      description: "Specialized gentle dentistry for kids by Dr. Riya. From pain-free pulpectomies and pit-and-fissure sealants to fluoride varnish and space maintainers.",
-      benefits: [
-        "Calm, playful, anxiety-free atmosphere",
-        "Child-sized instruments and fruity topical gels",
-        "Prevents early milk tooth loss and crowding",
-        "Builds positive dental confidence for life"
-      ]
-    },
-    {
-      id: "teeth-whitening",
-      name: "In-Clinic Laser Teeth Whitening",
-      category: "Cosmetic",
-      priceRange: "₹5,000 – ₹9,000",
-      duration: "45 Minutes",
-      isPopular: false,
-      painLevel: "Zero Pain",
-      description: "Professional medical-grade hydrogen peroxide activated by cool blue LED light to lift up to 6–8 shades of staining in a single lunch-break visit.",
-      benefits: [
-        "Instant shade transformation in 45 minutes",
-        "Includes enamel de-sensitizing shield",
-        "Safe on gum tissue with liquid dam barrier",
-        "Long-lasting brightness for weddings & events"
-      ]
-    },
-    {
       id: "zirconia-crowns",
       name: "CAD/CAM Zirconia Crowns & Bridges",
       category: "Restorative",
-      priceRange: "₹6,000 – ₹14,000",
+      priceRange: "Custom Estimate",
       duration: "2 Sittings",
       isPopular: true,
       painLevel: "Painless",
-      description: "Computer-milled monolithic multilayered zirconia crowns engineered with diamond precision for unbreakable strength and natural enamel luster.",
+      description: "Computer-milled monolithic multilayered zirconia crowns engineered for unbreakable strength and natural enamel luster.",
       benefits: [
-        "10 to 15-year warranty against chipping",
+        "Long-lasting durability against chipping",
         "100% metal-free, no black gum line borders",
         "Superior bite force resistance for molars",
         "Biocompatible with zero allergic reaction"
@@ -224,75 +162,75 @@ export const CLINIC_DATA = {
   testimonials: [
     {
       id: "1",
-      patientName: "Senthil Kumar",
-      location: "Kuyavarpalayam, Puducherry",
+      patientName: "Karthik Subramanian",
+      location: "Heritage Town, Puducherry",
       rating: 5,
-      treatment: "Single-Sitting Root Canal",
-      quote: "I was terrified of getting a root canal after hearing horror stories from friends. Dr. Logesh explained every step before touching a tooth. The entire procedure was completely painless—literally zero discomfort! Within 45 minutes I was out and back at work.",
-      highlight: "Literally zero discomfort during root canal",
+      treatment: "Complex Dental Implant",
+      quote: "I was told by another clinic that my case was too complicated and I couldn't get an implant. Dr. Sandhosh took it on, explained the entire procedure step-by-step, and handled it flawlessly. I finally have my smile back!",
+      highlight: "Implant care denied elsewhere but handled properly here",
       date: "August 2026"
     },
     {
       id: "2",
-      patientName: "Meenakshi Ramanathan",
-      location: "Lawspet, Puducherry",
+      patientName: "Priyanka R.",
+      location: "Puducherry",
       rating: 5,
-      treatment: "Family Dental Care & Same-Day Visit",
-      quote: "What sets iSMILE apart is their punctuality and availability. We walked in on a Sunday evening after my husband had severe toothache. We were attended to within 5 minutes without any waiting room delay. Open till 10 PM every day is a lifesaver for working parents.",
-      highlight: "Attended within 5 minutes on a Sunday evening",
+      treatment: "Full Checkup & Scaling",
+      quote: "The most modern and well-equipped clinic I have visited in Pondicherry. Dr. Sandhosh provides a very thorough explanation of the treatment and all precautions to take afterward. Highly recommended.",
+      highlight: "Thorough explanation of treatment and precautions",
       date: "July 2026"
     },
     {
       id: "3",
-      patientName: "Dr. Arvind Swaminathan",
-      location: "Heritage Town, Puducherry",
+      patientName: "Arun Prakash",
+      location: "Puducherry",
       rating: 5,
-      treatment: "Sterile Environment & Zirconia Crown",
-      quote: "As a physician myself, I inspect clinical hygiene rigorously. iSMILE's autoclave sterilization, fresh pouch seals, and clinical sanitation are second to none in Puducherry. Dr. Logesh's crown fitting was micron-perfect on the very first try.",
-      highlight: "Clinical sanitation is second to none",
+      treatment: "Root Canal Treatment",
+      quote: "Very friendly and professional staff. The clinic is spotless and uses advanced digital tools. The doctor made sure I understood exactly what the root canal involved, making me feel completely at ease.",
+      highlight: "Modern well-equipped clinic & friendly professional staff",
       date: "June 2026"
     },
     {
       id: "4",
-      patientName: "Pooja & Ananya (Age 7)",
-      location: "Mudaliarpet, Puducherry",
+      patientName: "Sowmya N.",
+      location: "Muthialpet, Puducherry",
       rating: 5,
-      treatment: "Pediatric Care & Cavity Fillings",
-      quote: "My 7-year-old daughter used to cry at the mere sight of a clinic door. Dr. Riya spoke to her with so much warmth, showing her the 'magic water' and tooth mirror first. Ananya actually asked when we can visit Dr. Riya again! iSMILE is now our permanent family clinic.",
-      highlight: "My 7-year-old daughter loves visiting Dr. Riya",
+      treatment: "Zirconia Crown",
+      quote: "My previous dentist rushed through my crown fitting. Dr. Sandhosh did the opposite—he was meticulous, patient, and took the time to ensure the bite was perfect. It's rare to find such dedicated care.",
+      highlight: "Patient, meticulous, and never rushes",
       date: "August 2026"
     },
     {
       id: "5",
-      patientName: "Vijay Anand",
-      location: "White Town, Puducherry",
+      patientName: "Rajesh Kannan",
+      location: "Puducherry",
       rating: 5,
-      treatment: "Cosmetic Veneers & Smile Makeover",
-      quote: "I had a prominent gap between my front teeth and yellow stains from coffee. Dr. Riya gave me a complete smile makeover with composite bonding and laser whitening. The results are unreal and so natural. The staff treats you with unmatched respect.",
-      highlight: "Complete smile makeover with natural results",
+      treatment: "Implant Consultation",
+      quote: "Exceptional digital equipment. Dr. Sandhosh walked me through the 3D scans and explained the implant procedure in a way no other dentist had. The staff were courteous and booking was seamless.",
+      highlight: "Exceptional digital equipment and clear explanations",
       date: "May 2026"
     }
   ] as Testimonial[],
   faqs: [
     {
-      q: "Is root canal treatment really painless at iSMILE?",
-      a: "Yes, 100%. We utilize computer-guided micro-anesthesia, high-speed rotary instrumentation, and precision electronic apex locators under Dr. Logesh. Most patients report feeling absolutely no pain during or after the procedure."
+      q: "What makes DIGISMILE's implant treatments different?",
+      a: "Dr. G. Sandhosh is an MDS specialist who successfully handles complex implant cases that are often denied or rushed elsewhere. We use advanced digital planning to ensure precise, long-lasting results."
     },
     {
-      q: "Do you accept same-day walk-in appointments?",
-      a: "Yes! iSMILE is open all 7 days a week from 9:00 AM to 10:00 PM. We reserve dedicated emergency and walk-in slots every single day so you never suffer with toothache."
+      q: "What are your clinic timings?",
+      a: "We are open Monday to Saturday from 6:30 PM to 9:30 PM. We are closed on Sundays. These evening hours are perfect for working professionals to visit after work."
     },
     {
       q: "Where is the clinic located in Puducherry?",
-      a: "We are centrally located at 216, Lenin St, Kuyavarpalayam, Puducherry, 605013. We have dedicated two-wheeler and four-wheeler parking right in front of the clinic."
+      a: "We are located on the 1st Floor, No 58, Muthu Mariamman Kovil St, Heritage Town, Puducherry, 605001."
     },
     {
-      q: "Who will treat me at iSMILE?",
-      a: "All treatments are personally carried out by our senior specialists: Dr. Logesh (Lead Endodontist & Implantologist) and Dr. Riya (Chief Aesthetic Dentist & Pediatric Specialist)."
+      q: "Will the doctor explain the procedure to me?",
+      a: "Absolutely. One of our most praised qualities is that Dr. Sandhosh takes the time to provide a thorough explanation of every treatment and all necessary precautions before proceeding."
     },
     {
-      q: "Are the prices transparent with no hidden costs?",
-      a: "Every single treatment plan includes a written itemized estimate before any procedure begins. You will never encounter surprise add-ons or unnecessary procedures."
+      q: "Is the clinic equipped with modern technology?",
+      a: "Yes, DIGISMILE is an advanced digital dental clinic featuring state-of-the-art diagnostic and surgical equipment for safer, faster, and more comfortable treatments."
     }
   ],
   agencyCredit: {
